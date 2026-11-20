@@ -32,7 +32,17 @@ No API key or server is required for the site. Agent research is performed by wh
 
 ## Data format
 
-Each conference has metadata and a `deadlines` array. Keep separate rounds separate. Each deadline is ISO-like local wall time (`YYYY-MM-DDTHH:mm:ss`) plus an explicit timezone field. Use `UNSPECIFIED` if the source does not state a timezone; do not silently assume UTC. For future agent updates, prefer official conference CFP pages and record the evidence in `notes` and the pull request.
+Schema version 2 groups editions under a conference with a stable `id`, `acronym`, and `tags`. Each edition has its own unique `id`, `name`, `year`, `description`, `website`, `cfp_url`, `conference_dates`, `location`, `deadlines`, `discovery_status`, `last_verified`, and `sources`. A conference can have multiple editions, each with a completely different website. Do not overwrite or remove older editions when adding a year. `website` and `cfp_url` may be `null` when not known.
+
+Each deadline has a positive `round`, `kind`, local wall time `deadline` (`YYYY-MM-DDTHH:mm:ss`), explicit `timezone`, and `sources`. Keep different submission types and rounds separate. Use `UNSPECIFIED` if the source does not state a timezone; do not silently assume UTC. Deadline and edition `sources` are arrays of direct official URLs supporting the relevant facts. Empty arrays mean no official source has been recorded, not that a fact is verified. Record disagreements and context in `notes` and in the pull request.
+
+The discovery statuses are `search_pending`, `website_found`, `verified`, `cfp_available`, `deadlines_verified`, `not_announced`, and `needs_review` (see `AGENTS.md`). `last_verified` is an ISO date or `null` and must reflect actual verification, not the import date. Record a search date separately as `last_searched` when appropriate. For statuses indicating verification, the validator requires a website, verification date and official edition sources; `cfp_available` also requires a CFP URL, and `deadlines_verified` requires official sources for every deadline. Validation checks structure, not the truth or authority of a source.
+
+The migrated snapshot retains the original edition IDs, URLs and deadline details. Its `snapshot_source` and `snapshot_date` record the original third-party source and transcription date, not official verification. Those editions remain `search_pending`, with `last_verified` set to `null` and official source arrays empty until researched.
+
+The website shows wall times with their recorded timezone. Its countdowns and past/upcoming filters use calendar dates relative to the viewer's local date, not exact timezone-aware instants; confirm the actual cutoff with the conference.
+
+Validate changes with `python scripts/validate.py`.
 
 ## Local preview
 
