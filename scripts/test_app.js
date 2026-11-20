@@ -37,7 +37,7 @@ setImmediate(() => {
   assert.match(elements.list.innerHTML, /https:\/\/second\.example/);
   assert.match(elements.list.innerHTML, /<span class="name">EX 2028<\/span>/);
   assert.match(elements.list.innerHTML, /AoE/);
-  assert.match(elements.list.innerHTML, /AoE assumed; source unspecified/);
+  assert.match(elements.list.innerHTML, /\(AoE assumed\)/);
   assert.match(elements.list.innerHTML, /Abstract · Round 1/);
   assert.match(elements.list.innerHTML, /Full paper · Round 1/);
   assert.match(elements.list.innerHTML, /Submission \(type unspecified\)/);
