@@ -40,7 +40,7 @@ The discovery statuses are `search_pending`, `website_found`, `verified`, `cfp_a
 
 The migrated snapshot retains the original edition IDs, URLs and deadline details. Its `snapshot_source` and `snapshot_date` record the original third-party source and transcription date, not official verification. Those editions remain `search_pending`, with `last_verified` set to `null` and official source arrays empty until researched.
 
-The website shows wall times with their recorded timezone. Its countdowns and past/upcoming filters use calendar dates relative to the viewer's local date, not exact timezone-aware instants; confirm the actual cutoff with the conference.
+The website shows wall times with their recorded timezone. For `UNSPECIFIED`, it explicitly assumes AoE (UTC−12) for countdowns and past/upcoming filters without changing the stored source data. AoE, UTC/GMT and numeric UTC offsets use exact instants; other timezone formats fall back to date-only estimates relative to the viewer's local date and are labeled accordingly. Results are ordered by the recorded wall times. Confirm the actual cutoff with the conference.
 
 Validate changes with `python scripts/validate.py`.
 

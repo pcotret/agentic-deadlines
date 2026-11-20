@@ -10,7 +10,7 @@ const data = {conferences: [{
       {round: 1, kind: "submission", deadline: "2026-01-01T23:59:00", timezone: "UNSPECIFIED"}
     ]},
     {year: 2027, name: "EX 2027", description: "Second", location: "There", conference_dates: "TBA", website: "https://second.example", deadlines: [
-      {round: 1, kind: "abstract", deadline: "2027-01-01T23:59:00", timezone: "AoE"},
+      {round: 1, kind: "abstract", deadline: "2027-01-01T23:59:00", timezone: "UNSPECIFIED"},
       {round: 2, kind: "submission", deadline: "2027-01-08T23:59:00", timezone: "AoE"}
     ]},
     {year: 2028, name: "EX 2028", description: "Third", location: "TBA", conference_dates: "TBA", website: null, deadlines: [
@@ -36,7 +36,15 @@ setImmediate(() => {
   assert.match(elements.list.innerHTML, /https:\/\/second\.example/);
   assert.match(elements.list.innerHTML, /<span class="name">EX 2028<\/span>/);
   assert.match(elements.list.innerHTML, /AoE/);
+  assert.match(elements.list.innerHTML, /AoE assumed; source unspecified/);
   assert.match(elements.list.innerHTML, /abstract/);
+  assert.equal(vm.runInContext('deadlineInstant("2027-01-01T23:59:00", "UNSPECIFIED")', context), Date.parse("2027-01-02T11:59:00Z"));
+  assert.equal(vm.runInContext('deadlineInstant("2027-01-01T23:59:00", "AoE")', context), Date.parse("2027-01-02T11:59:00Z"));
+  assert.equal(vm.runInContext('deadlineInstant("2027-01-01T23:59:00", "UTC+02:30")', context), Date.parse("2027-01-01T21:29:00Z"));
+  assert.equal(vm.runInContext('deadlineInstant("2027-01-01T23:59:00", "UTC")', context), Date.parse("2027-01-01T23:59:00Z"));
+  assert.equal(vm.runInContext('deadlineState({deadline:"2027-01-01T23:59:00", timezone:"UNSPECIFIED"}, Date.parse("2027-01-02T11:58:59Z")).past', context), false);
+  assert.equal(vm.runInContext('deadlineState({deadline:"2027-01-01T23:59:00", timezone:"UNSPECIFIED"}, Date.parse("2027-01-02T11:59:01Z")).past', context), true);
+  assert.match(vm.runInContext('deadlineState({deadline:"2027-01-01T23:59:00", timezone:"America/New_York"}, Date.parse("2027-01-02T11:59:01Z")).left', context), /date only/);
   elements.year.value = "2027";
   vm.runInContext("render()", context);
   assert.equal(elements.count.textContent, "2 deadlines");
