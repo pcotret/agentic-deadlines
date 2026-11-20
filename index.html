@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A lightweight, agent-maintained conference deadline tracker.">
+  <title>Conference deadlines</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="wrap hero">
+  <div class="eyebrow">RESEARCH · SUBMISSION TRACKER</div>
+  <h1>Conference deadlines<span>.</span></h1>
+  <p class="sub">A small, searchable calendar of conferences worth keeping an eye on.</p>
+  <div class="stats" id="stats"></div>
+</header>
+<main class="wrap">
+  <section class="toolbar">
+    <input id="search" type="search" placeholder="Search conferences, topics, locations…" aria-label="Search">
+    <select id="tag"><option value="">All topics</option></select>
+    <select id="year"><option value="">All years</option></select>
+    <select id="status"><option value="upcoming">Upcoming deadlines</option><option value="all">All deadlines</option><option value="past">Past deadlines</option></select>
+  </section>
+  <div class="section-head"><h2 id="heading">Upcoming deadlines</h2><span id="count"></span></div>
+  <div id="list" class="list" aria-live="polite"></div>
+  <p class="footnote">Dates are transcribed from the source page. Always confirm the deadline and timezone on the official conference website.</p>
+</main>
+<footer class="wrap footer">
+  <span>Open data · GitHub Pages</span>
+  <a href="https://github.com/" id="repo-link">Edit this tracker on GitHub</a>
+</footer>
+<script src="app.js"></script>
+</body></html>

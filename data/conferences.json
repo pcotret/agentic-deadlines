@@ -1,0 +1,1605 @@
+{
+  "schema_version": 1,
+  "source": "https://pcotret.github.io/deadlines-confs/",
+  "generated_at": "2026-11-20",
+  "conferences": [
+    {
+      "id": "proofs-2026",
+      "name": "PROOFS 2026",
+      "acronym": "PROOFS",
+      "year": 2026,
+      "description": "14th International Workshop on Security Proofs for Embedded Systems",
+      "url": "https://www.proofs-workshop.org",
+      "conference_dates": "Oct 11–15, 2026",
+      "location": "Antalya, Turkey",
+      "tags": [
+        "Security"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-03-15T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "glsvlsi-2026",
+      "name": "GLSVLSI 2026",
+      "acronym": "GLSVLSI",
+      "year": 2026,
+      "description": "Great Lakes Symposium on VLSI (GLSVLSI)",
+      "url": "https://www.glsvlsi.org",
+      "conference_dates": "Jun 22–24, 2026",
+      "location": "Finger Lakes, USA",
+      "tags": [
+        "Hardware"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-03-02T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "heart-2026",
+      "name": "HEART 2026",
+      "acronym": "HEART",
+      "year": 2026,
+      "description": "Highly Efficient Accelerators and Reconfigurable Technologies",
+      "url": "https://heart2026.github.io",
+      "conference_dates": "Jun 17–19, 2026",
+      "location": "Heidelberg, Germany",
+      "tags": [
+        "Hardware"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-03-02T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "systex-2026",
+      "name": "SysTEX 2026",
+      "acronym": "SysTEX",
+      "year": 2026,
+      "description": "9th Workshop on System Software for Trusted Execution",
+      "url": "https://systex-workshop.github.io",
+      "conference_dates": "Apr 27, 2026",
+      "location": "Edinburgh, Scotland",
+      "tags": [
+        "Security",
+        "VM & OS"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-02-07T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "cascade-2027",
+      "name": "CASCADE 2027",
+      "acronym": "CASCADE",
+      "year": 2027,
+      "description": "Constructive Approaches for SeCurity Analysis and Design of Embedded systems",
+      "url": "https://cascade-conference.org",
+      "conference_dates": "Apr 4–7, 2027",
+      "location": "Heilbronn, Germany",
+      "tags": [
+        "Security",
+        "Hardware"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-11-17T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "esorics-2027",
+      "name": "ESoRiCS 2027",
+      "acronym": "ESoRiCS",
+      "year": 2027,
+      "description": "32nd European Symposium on Research in Computer Security",
+      "url": "https://www.esorics2027.org",
+      "conference_dates": "Sep 13–17, 2027",
+      "location": "Vienna, Austria",
+      "tags": [
+        "Security"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2027-01-09T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 2,
+          "deadline": "2027-04-21T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "hs3-2026",
+      "name": "HS3 2026",
+      "acronym": "HS3",
+      "year": 2026,
+      "description": "2nd Workshop on Hardware-Supported Software Security",
+      "url": "https://hs3-workshop.github.io",
+      "conference_dates": "Sep 17, 2026",
+      "location": "Rome, Italy",
+      "tags": [
+        "Hardware",
+        "Security"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-06-29T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "sehas-2027",
+      "name": "SeHAS 2027",
+      "acronym": "SeHAS",
+      "year": 2027,
+      "description": "Workshop on Secure Hardware, Architectures, and Software",
+      "url": "https://sehas-workshop.github.io",
+      "conference_dates": "Jan 18–20, 2027",
+      "location": "Glasgow, Scotland",
+      "tags": [
+        "Hardware",
+        "Security"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-09-11T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "csr-2026",
+      "name": "CSR 2026",
+      "acronym": "CSR",
+      "year": 2026,
+      "description": "IEEE International Conference on Cyber Security and Resilience",
+      "url": "https://www.ieee-csr.org",
+      "conference_dates": "Aug 3–5, 2026",
+      "location": "Lisbon, Portugal",
+      "tags": [
+        "Security"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-02-02T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "raid-2026",
+      "name": "RAID 2026",
+      "acronym": "RAID",
+      "year": 2026,
+      "description": "International Symposium on Research in Attacks, Intrusions and Defenses",
+      "url": "https://raid2026.org",
+      "conference_dates": "Oct 11–14, 2026",
+      "location": "Lancaster, United Kingdom",
+      "tags": [
+        "Security"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-04-16T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "bec-2026",
+      "name": "BEC 2026",
+      "acronym": "BEC",
+      "year": 2026,
+      "description": "The 20th Biennial Baltic Electronics Conference",
+      "url": "https://taltech.ee",
+      "conference_dates": "Oct 5–8, 2026",
+      "location": "Tallinn, Estonia",
+      "tags": [
+        "Hardware"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-05-25T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "raw-2027",
+      "name": "RAW 2027",
+      "acronym": "RAW",
+      "year": 2027,
+      "description": "34th Reconfigurable Architectures Workshop",
+      "url": "https://raw.necst.it",
+      "conference_dates": "TBA",
+      "location": "Seattle, USA",
+      "tags": [
+        "Hardware"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2027-02-07T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "acsac-2026",
+      "name": "ACSAC 2026",
+      "acronym": "ACSAC",
+      "year": 2026,
+      "description": "Annual Computer Security Applications Conference",
+      "url": "https://www.acsac.org",
+      "conference_dates": "Dec 7–11, 2026",
+      "location": "Los Angeles, California, USA",
+      "tags": [
+        "Security"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-05-26T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "fccm-2027",
+      "name": "FCCM 2027",
+      "acronym": "FCCM",
+      "year": 2027,
+      "description": "35th IEEE International Symposium on Field-Programmable Custom Computing Machines",
+      "url": "https://fccm.org",
+      "conference_dates": "May 9–12, 2027",
+      "location": "Provo, Utah, USA",
+      "tags": [
+        "Hardware"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2027-01-10T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 2,
+          "deadline": "2027-01-17T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "fpl-2026",
+      "name": "FPL 2026",
+      "acronym": "FPL",
+      "year": 2026,
+      "description": "36th International Conference on Field Programmable Logic and Applications",
+      "url": "https://2026.fpl.org",
+      "conference_dates": "Sep 7–11, 2026",
+      "location": "Ghent, Belgium",
+      "tags": [
+        "Hardware"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-03-20T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 2,
+          "deadline": "2026-03-27T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "dsd-2026",
+      "name": "DSD 2026",
+      "acronym": "DSD",
+      "year": 2026,
+      "description": "29th Euromicro Conference Series on Digital System Design",
+      "url": "https://dsd-seaa.com",
+      "conference_dates": "Sep 2–4, 2026",
+      "location": "Krakow, Poland",
+      "tags": [
+        "Hardware"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-04-15T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "newcas-2026",
+      "name": "NewCAS 2026",
+      "acronym": "NewCAS",
+      "year": 2026,
+      "description": "24th IEEE International NEWCAS Conference",
+      "url": "https://newcas.org",
+      "conference_dates": "Jun 21–24, 2026",
+      "location": "Saguenay, Québec",
+      "tags": [
+        "Hardware"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-02-09T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "silm-2024",
+      "name": "SILM 2024",
+      "acronym": "SILM",
+      "year": 2024,
+      "description": "Workshop on the Security of Software / Hardware Interfaces",
+      "url": "https://silm-workshop.github.io",
+      "conference_dates": "Jul 12, 2024",
+      "location": "Vienna, Austria",
+      "tags": [
+        "Hardware",
+        "Security"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2024-03-29T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "codes-isss-2026",
+      "name": "CODES+ISSS 2026",
+      "acronym": "CODES+ISSS",
+      "year": 2026,
+      "description": "International Conference on Hardware/Software Codesign and System Synthesis",
+      "url": "https://esweek.org",
+      "conference_dates": "Oct 4–9, 2026",
+      "location": "Barcelona, Spain",
+      "tags": [
+        "Hardware",
+        "VM & OS"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-03-23T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 2,
+          "deadline": "2026-03-30T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "micro-2026",
+      "name": "MICRO 2026",
+      "acronym": "MICRO",
+      "year": 2026,
+      "description": "International Symposium on Microarchitecture",
+      "url": "https://microarch.org",
+      "conference_dates": "Oct 31–Nov 4, 2026",
+      "location": "Seoul, Korea",
+      "tags": [
+        "Hardware"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-03-31T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 2,
+          "deadline": "2026-04-07T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "carrv-2024",
+      "name": "CARRV 2024",
+      "acronym": "CARRV",
+      "year": 2024,
+      "description": "Eighth Workshop on Computer Architecture Research with RISC-V",
+      "url": "https://carrv.github.io",
+      "conference_dates": "Nov 2, 2024",
+      "location": "Austin, USA",
+      "tags": [
+        "Hardware"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2024-08-04T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "iccad-2026",
+      "name": "ICCAD 2026",
+      "acronym": "ICCAD",
+      "year": 2026,
+      "description": "International Conference on Computer-Aided Design",
+      "url": "https://iccad.com",
+      "conference_dates": "Nov 8–12, 2026",
+      "location": "Munich, Germany",
+      "tags": [
+        "Hardware"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-04-07T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 2,
+          "deadline": "2026-04-14T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "hipeac-2027",
+      "name": "HIPEAC 2027",
+      "acronym": "HIPEAC",
+      "year": 2027,
+      "description": "HIPEAC 2027",
+      "url": "https://www.hipeac.net",
+      "conference_dates": "Jan 26–28, 2027",
+      "location": "Glasgow, Scotland",
+      "tags": [
+        "Hardware",
+        "VM & OS"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-06-01T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "icfpt-2026",
+      "name": "ICFPT 2026",
+      "acronym": "ICFPT",
+      "year": 2026,
+      "description": "International Conference on Field Programmable Technology",
+      "url": "https://fpt2026.uark.edu",
+      "conference_dates": "Dec 7–10, 2026",
+      "location": "Shanghai, China",
+      "tags": [
+        "Hardware"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-05-01T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 2,
+          "deadline": "2026-06-19T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "arcs-2026",
+      "name": "ARCS 2026",
+      "acronym": "ARCS",
+      "year": 2026,
+      "description": "International Conference on Architecture of Computing Systems",
+      "url": "https://arcs-conference.org",
+      "conference_dates": "Mar 24–26, 2026",
+      "location": "Mainz, Germany",
+      "tags": [
+        "Hardware",
+        "VM & OS"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-01-11T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 2,
+          "deadline": "2026-01-18T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "aspdac-2027",
+      "name": "ASPDAC 2027",
+      "acronym": "ASPDAC",
+      "year": 2027,
+      "description": "32nd Asia and South Pacific Design Automation Conference",
+      "url": "https://www.aspdac.com",
+      "conference_dates": "Jan 25–28, 2027",
+      "location": "Tokyo, Japan",
+      "tags": [
+        "Hardware"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-07-11T16:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 2,
+          "deadline": "2026-07-18T16:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "hpca-2027",
+      "name": "HPCA 2027",
+      "acronym": "HPCA",
+      "year": 2027,
+      "description": "33rd IEEE International Symposium on High-Performance Computer Architecture",
+      "url": "https://conf.researchr.org",
+      "conference_dates": "Jan 30–Feb 3, 2027",
+      "location": "Salt Lake City, Utah, USA",
+      "tags": [
+        "Hardware"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-07-25T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 2,
+          "deadline": "2026-08-01T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "fpga-2027",
+      "name": "FPGA 2027",
+      "acronym": "FPGA",
+      "year": 2027,
+      "description": "ACM/SIGDA International Symposium on Field-Programmable Gate Arrays",
+      "url": "https://www.isfpga.org",
+      "conference_dates": "Mar 14–16, 2027",
+      "location": "Monterrey, Mexico",
+      "tags": [
+        "Hardware"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-10-01T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 2,
+          "deadline": "2026-10-08T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "date-2027",
+      "name": "DATE 2027",
+      "acronym": "DATE",
+      "year": 2027,
+      "description": "Design, Automation and Test in Europe",
+      "url": "https://date-conference.com",
+      "conference_dates": "Mar 22–24, 2027",
+      "location": "Dresden, Germany",
+      "tags": [
+        "Hardware"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-09-13T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 2,
+          "deadline": "2026-09-20T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "iscas-2027",
+      "name": "ISCAS 2027",
+      "acronym": "ISCAS",
+      "year": 2027,
+      "description": "IEEE International Symposium on Circuits and Systems",
+      "url": "https://2027.ieee-iscas.org",
+      "conference_dates": "Jun 6–9, 2027",
+      "location": "Bordeaux, France",
+      "tags": [
+        "Hardware"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-10-13T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "dac-2027",
+      "name": "DAC 2027",
+      "acronym": "DAC",
+      "year": 2027,
+      "description": "Design Automation Conference",
+      "url": "https://www.dac.com",
+      "conference_dates": "Jul 11–14, 2027",
+      "location": "San Jose, USA",
+      "tags": [
+        "Hardware"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-11-11T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 2,
+          "deadline": "2026-11-18T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "isca-2027",
+      "name": "ISCA 2027",
+      "acronym": "ISCA",
+      "year": 2027,
+      "description": "International Symposium on Computer Architecture",
+      "url": "https://iscaconf.org",
+      "conference_dates": "Jun 5–9, 2027",
+      "location": "Atlanta, USA",
+      "tags": [
+        "Hardware"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-11-09T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 2,
+          "deadline": "2026-11-16T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "rapido-2027",
+      "name": "Rapido 2027",
+      "acronym": "Rapido",
+      "year": 2027,
+      "description": "Workshop on Rapid Simulation and Performance Evaluation for Design Optimization Methods and Tools",
+      "url": "https://rapidoworkshop.github.io",
+      "conference_dates": "Jan 20, 2027",
+      "location": "Glasgow, UK",
+      "tags": [
+        "Hardware"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-11-07T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 2,
+          "deadline": "2026-11-13T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "asap-2026",
+      "name": "ASAP 2026",
+      "acronym": "ASAP",
+      "year": 2026,
+      "description": "IEEE International Conference on Application-specific Systems, Architectures and Processors",
+      "url": "https://2026.asap-conf.org",
+      "conference_dates": "Date not listed",
+      "location": "London, United Kingdom",
+      "tags": [
+        "Hardware"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-04-03T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 2,
+          "deadline": "2026-04-10T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "mwcas-2026",
+      "name": "MWCAS 2026",
+      "acronym": "MWCAS",
+      "year": 2026,
+      "description": "IEEE International Midwest Symposium on Circuits and Systems",
+      "url": "https://mwscas2026.org",
+      "conference_dates": "Aug 9–12, 2026",
+      "location": "Cincinnati, USA",
+      "tags": [
+        "Hardware"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-03-17T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "asianhost-2026",
+      "name": "AsianHOST 2026",
+      "acronym": "AsianHOST",
+      "year": 2026,
+      "description": "Asian Hardware Oriented Security and Trust Symposium",
+      "url": "https://www.asianhost.org",
+      "conference_dates": "Dec 11–13, 2026",
+      "location": "Kharagpur, India",
+      "tags": [
+        "Hardware",
+        "Security"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-07-14T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "ccs-2026",
+      "name": "CCS 2026",
+      "acronym": "CCS",
+      "year": 2026,
+      "description": "ACM Conference on Computer and Communications Security",
+      "url": "https://www.sigsac.org",
+      "conference_dates": "Nov 15–19, 2026",
+      "location": "The Hague, Netherlands",
+      "tags": [
+        "Security"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-01-14T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 2,
+          "deadline": "2026-04-29T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "woot-2027",
+      "name": "WOOT 2027",
+      "acronym": "WOOT",
+      "year": 2027,
+      "description": "USENIX WOOT Conference on Offensive Technologies",
+      "url": "https://www.usenix.org",
+      "conference_dates": "Aug 9–10, 2027",
+      "location": "Denver, USA",
+      "tags": [
+        "Security"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-12-17T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 2,
+          "deadline": "2027-03-02T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "ndss-2027",
+      "name": "NDSS 2027",
+      "acronym": "NDSS",
+      "year": 2027,
+      "description": "Network and Distributed System Security Symposium",
+      "url": "https://www.ndss-symposium.org",
+      "conference_dates": "Mar 22–26, 2027",
+      "location": "Seoul, Korea",
+      "tags": [
+        "Security"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-05-06T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 2,
+          "deadline": "2026-08-19T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "asia-ccs-2027",
+      "name": "Asia CCS 2027",
+      "acronym": "Asia CCS",
+      "year": 2027,
+      "description": "ACM ASIA Conference on Computer and Communications Security",
+      "url": "https://asiaccs2027.cityu.edu.mo",
+      "conference_dates": "Jul 12–16, 2027",
+      "location": "Macau, China",
+      "tags": [
+        "Security"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-08-21T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 2,
+          "deadline": "2026-12-11T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "hasp-2026",
+      "name": "HASP 2026",
+      "acronym": "HASP",
+      "year": 2026,
+      "description": "Hardware and Architectural Support for Security and Privacy",
+      "url": "https://www.haspworkshop.org",
+      "conference_dates": "Oct 31, 2026",
+      "location": "Athens, Greece",
+      "tags": [
+        "Hardware",
+        "Security"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-08-10T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "eurosp-2027",
+      "name": "EuroSP 2027",
+      "acronym": "EuroSP",
+      "year": 2027,
+      "description": "IEEE European Symposium on Security and Privacy",
+      "url": "https://eurosp2027.ieee-security.org",
+      "conference_dates": "Jul 6–10, 2027",
+      "location": "Madrid, Spain",
+      "tags": [
+        "Security"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-11-13T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 2,
+          "deadline": "2026-11-20T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "sp-2027",
+      "name": "SP 2027",
+      "acronym": "SP",
+      "year": 2027,
+      "description": "IEEE Symposium on Security and Privacy",
+      "url": "https://sp2027.ieee-security.org",
+      "conference_dates": "May 18–21, 2027",
+      "location": "Montréal, Canada",
+      "tags": [
+        "Security"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-06-04T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 2,
+          "deadline": "2026-11-10T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "host-2027",
+      "name": "HOST 2027",
+      "acronym": "HOST",
+      "year": 2027,
+      "description": "IEEE International Symposium on Hardware Oriented Security and Trust",
+      "url": "https://www.hostsymposium.org",
+      "conference_dates": "May 3–6, 2027",
+      "location": "Washington, USA",
+      "tags": [
+        "Hardware",
+        "Security"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-07-22T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 2,
+          "deadline": "2026-11-08T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "usenix-security-2027",
+      "name": "USENIX Security 2027",
+      "acronym": "USENIX Security",
+      "year": 2027,
+      "description": "USENIX Security Symposium",
+      "url": "https://www.usenix.org",
+      "conference_dates": "Date not listed",
+      "location": "Denver, USA",
+      "tags": [
+        "Security"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-08-18T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 2,
+          "deadline": "2027-01-26T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "cryptarchi-2025",
+      "name": "Cryptarchi 2025",
+      "acronym": "Cryptarchi",
+      "year": 2025,
+      "description": "International Workshops on Cryptographic architectures embedded in logic devices",
+      "url": "https://labh-curien.univ-st-etienne.fr",
+      "conference_dates": "Jun 16–17, 2025",
+      "location": "Autrans, France",
+      "tags": [
+        "Hardware",
+        "Security"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2025-04-14T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "ches-2027",
+      "name": "CHES 2027",
+      "acronym": "CHES",
+      "year": 2027,
+      "description": "Conference on Cryptographic Hardware and Embedded Systems",
+      "url": "https://ches.iacr.org",
+      "conference_dates": "Sep 6–9, 2027",
+      "location": "Cancun, Mexico",
+      "tags": [
+        "Hardware",
+        "Security"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-07-15T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 2,
+          "deadline": "2026-10-15T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 3,
+          "deadline": "2027-01-15T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 4,
+          "deadline": "2027-04-15T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "dls-2023",
+      "name": "DLS 2023",
+      "acronym": "DLS",
+      "year": 2023,
+      "description": "Dynamic Languages Symposium",
+      "url": "https://dynamic-languages-symposium.org",
+      "conference_dates": "Oct 22–27, 2023",
+      "location": "Cascais, Portugal",
+      "tags": [
+        "VM & OS"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2023-07-26T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "vmil-2026",
+      "name": "VMIL 2026",
+      "acronym": "VMIL",
+      "year": 2026,
+      "description": "Workshop on Virtual Machines and Language Implementations",
+      "url": "https://conf.researchr.org",
+      "conference_dates": "Oct 3–9, 2026",
+      "location": "Oakland, United States",
+      "tags": [
+        "VM & OS"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-08-14T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "pldi-2027",
+      "name": "PLDI 2027",
+      "acronym": "PLDI",
+      "year": 2027,
+      "description": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+      "url": "https://pldi27.sigplan.org",
+      "conference_dates": "Jun 5–11, 2027",
+      "location": "Atlanta, USA",
+      "tags": [
+        "VM & OS"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-11-12T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "vee-2022",
+      "name": "VEE 2022",
+      "acronym": "VEE",
+      "year": 2022,
+      "description": "ACM SIGPLAN/SIGOPS International Conference on Virtual Execution Environments",
+      "url": "https://conf.researchr.org",
+      "conference_dates": "Mar 1, 2022",
+      "location": "Online",
+      "tags": [
+        "VM & OS"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2021-12-03T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "mplr-2026",
+      "name": "MPLR 2026",
+      "acronym": "MPLR",
+      "year": 2026,
+      "description": "Managed Programming Languages and Runtimes",
+      "url": "https://2026.ecoop.org",
+      "conference_dates": "Jun 30, 2026",
+      "location": "Brussels, Belgium",
+      "tags": [
+        "VM & OS"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-03-13T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "gpce-2024",
+      "name": "GPCE 2024",
+      "acronym": "GPCE",
+      "year": 2024,
+      "description": "International Conference on Generative Programming Concepts & Experiences",
+      "url": "https://2024.splashcon.org",
+      "conference_dates": "Oct 20–25, 2024",
+      "location": "Pasadena, USA",
+      "tags": [
+        "VM & OS"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2024-06-11T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 2,
+          "deadline": "2024-06-18T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "recosoc-2019",
+      "name": "Recosoc 2019",
+      "acronym": "Recosoc",
+      "year": 2019,
+      "description": "International Symposium on Reconfigurable Communication-centric Systems-on-Chip",
+      "url": "https://web.archive.org",
+      "conference_dates": "Jul 1–3, 2019",
+      "location": "York, United Kingdom",
+      "tags": [
+        "Hardware"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2019-04-28T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 2,
+          "deadline": "2019-05-05T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "arc-2026",
+      "name": "ARC 2026",
+      "acronym": "ARC",
+      "year": 2026,
+      "description": "International Symposium on Applied Reconfigurable Computing",
+      "url": "https://www.arc2026.org",
+      "conference_dates": "Apr 8–10, 2026",
+      "location": "Cagliari, Italy",
+      "tags": [
+        "Hardware"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2025-02-08T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 2,
+          "deadline": "2025-02-15T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "isvlsi-2026",
+      "name": "ISVLSI 2026",
+      "acronym": "ISVLSI",
+      "year": 2026,
+      "description": "IEEE Computer Society Annual Symposium on VLSI",
+      "url": "https://ieee-isvlsi.github.io",
+      "conference_dates": "Jul 7–10, 2026",
+      "location": "Kolkata, India",
+      "tags": [
+        "Hardware"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-02-10T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    },
+    {
+      "id": "dasip-2027",
+      "name": "DASIP 2027",
+      "acronym": "DASIP",
+      "year": 2027,
+      "description": "Workshop on Design and Architectures for Signal and Image Processing",
+      "url": "https://dasip-2027.github.io",
+      "conference_dates": "Jan 18–20, 2027",
+      "location": "Glasgow, Scotland",
+      "tags": [
+        "Hardware"
+      ],
+      "deadlines": [
+        {
+          "round": 1,
+          "deadline": "2026-08-26T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        },
+        {
+          "round": 2,
+          "deadline": "2026-11-10T23:59:00",
+          "timezone": "UNSPECIFIED",
+          "kind": "submission",
+          "notes": "Time shown on source page; timezone not stated."
+        }
+      ],
+      "source": "https://pcotret.github.io/deadlines-confs/",
+      "last_verified": "2026-11-20"
+    }
+  ]
+}
