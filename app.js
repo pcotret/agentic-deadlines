@@ -57,7 +57,7 @@ function render(){
       <div class="meta"><span>${esc(e.conference_dates)}</span><span>·</span><span>${esc(e.location)}</span>${c.tags.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div></div>
       <div class="deadlines">${group.deadlines.map(x=>{
         const {past,left}=deadlineState(x,now);
-        const timezone=x.timezone==="UNSPECIFIED"?"AoE assumed; source unspecified":x.timezone;
+        const timezone=x.timezone==="UNSPECIFIED"?"AoE assumed":x.timezone;
         return `<div class="deadline ${past?"past":""}"><div class="deadline-kind">${esc(deadlineKind(x.kind))} · Round ${x.round}</div><div class="date">${fmt(x.deadline)} (${esc(timezone)})</div><div class="countdown">${left}</div></div>`;
       }).join("")}</div>
     </article>`;
