@@ -1,0 +1,33 @@
+name: Update a conference deadline
+description: Report a changed or newly published conference deadline
+title: "[Deadline update] "
+labels: ["deadline-update"]
+body:
+  - type: input
+    id: conference
+    attributes:
+      label: Conference and edition
+      placeholder: e.g. ISCA 2028
+    validations:
+      required: true
+  - type: input
+    id: official-url
+    attributes:
+      label: Official source URL
+      description: CFP, conference website, or submission portal
+    validations:
+      required: true
+  - type: input
+    id: deadline
+    attributes:
+      label: Deadline (as published)
+      placeholder: e.g. 2027-11-09 23:59 AoE
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Notes
+      description: Round, abstract/paper distinction, timezone, or other context
+    validations:
+      required: true
