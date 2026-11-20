@@ -7,7 +7,7 @@ A small static conference-deadline tracker based on [Pascal Cotret's list](https
 - `index.html`, `styles.css`, `app.js`: dependency-free static site.
 - `data/conferences.json`: conference list and individual deadline rounds.
 - `AGENTS.md`: instructions for an AI agent to research, verify and update records safely.
-- `.github/workflows/pages.yml`: deploys to GitHub Pages on pushes to `main`.
+- `.github/workflows/pages.yml`: deploys to GitHub Pages on pushes to `master`.
 - `.github/workflows/validate.yml`: validates the dataset on pushes and pull requests.
 - `.github/ISSUE_TEMPLATE/update-deadline.yml`: structured update requests.
 
@@ -16,7 +16,7 @@ The initial data is a snapshot transcribed from the source page on 2026-11-20. I
 ## Publish on GitHub Pages
 
 1. Create a new GitHub repository and upload the contents of this ZIP (files at repository root).
-2. Push to the `main` branch.
+2. Push to the `master` branch.
 3. In **Settings → Pages → Build and deployment**, choose **GitHub Actions**.
 4. The `Deploy to GitHub Pages` workflow publishes the site automatically.
 
