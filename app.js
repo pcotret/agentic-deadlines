@@ -6,6 +6,23 @@ function daysUntil(value){
   const [year,month,day]=value.slice(0,10).split("-").map(Number), now=new Date();
   return Math.round((Date.UTC(year,month-1,day)-Date.UTC(now.getFullYear(),now.getMonth(),now.getDate()))/86400000);
 }
+function deadlineInstant(deadline, timezone){
+  if(timezone==="UNSPECIFIED"||timezone.toUpperCase()==="AOE") return Date.parse(deadline+"Z")+12*3600000;
+  if(/^(UTC|GMT|Z)$/i.test(timezone)) return Date.parse(deadline+"Z");
+  const offset=timezone.match(/^(?:UTC|GMT)?([+-])(\d{1,2})(?::?(\d{2}))?$/i);
+  if(!offset||Number(offset[2])>23||Number(offset[3]||0)>59) return null;
+  const minutes=(Number(offset[2])*60+Number(offset[3]||0))*(offset[1]==="+"?1:-1);
+  return Date.parse(deadline+"Z")-minutes*60000;
+}
+function deadlineState(x, now){
+  const instant=deadlineInstant(x.deadline,x.timezone);
+  if(instant===null){
+    const days=daysUntil(x.deadline), past=days<0;
+    return {past, left:`${past?`${Math.abs(days)} days ago`:days===0?"Due today":`in ${days} days`} (date only)`};
+  }
+  const remaining=instant-now, past=remaining<0, days=Math.floor(Math.abs(remaining)/86400000);
+  return {past, left:past?(days?`${days} days ago`:"Less than a day ago"):(days?`in ${Math.ceil(remaining/86400000)} days`:"Due within 24 hours")};
+}
 function initFilters(){
   const tags=[...new Set(conferences.flatMap(c=>c.tags))].sort();
   tags.forEach(t=>$("#tag").add(new Option(t,t)));
@@ -13,8 +30,9 @@ function initFilters(){
 }
 function render(){
   const q=$("#search").value.toLowerCase(), tag=$("#tag").value, year=$("#year").value, status=$("#status").value;
+  const now=new Date().getTime();
   const rows=allDeadlines().filter(x=>{
-    const c=x.conf, e=x.edition, past=daysUntil(x.deadline)<0;
+    const c=x.conf, e=x.edition, past=deadlineState(x,now).past;
     return (!q||[e.name,e.description,e.location,c.acronym,...c.tags].join(" ").toLowerCase().includes(q))
       &&(!tag||c.tags.includes(tag))&&(!year||String(e.year)===year)
       &&(status==="all"||(status==="past"?past:!past));
@@ -22,14 +40,14 @@ function render(){
   $("#heading").textContent=status==="past"?"Past deadlines":status==="all"?"All deadlines":"Upcoming deadlines";
   $("#count").textContent=`${rows.length} deadline${rows.length===1?"":"s"}`;
   $("#list").innerHTML=rows.length?rows.map(x=>{
-    const c=x.conf, e=x.edition, days=daysUntil(x.deadline), past=days<0;
-    const left=past?`${Math.abs(days)} days ago`:days===0?"Due today":`in ${days} days`;
+    const c=x.conf, e=x.edition, {past,left}=deadlineState(x,now);
+    const timezone=x.timezone==="UNSPECIFIED"?"AoE assumed; source unspecified":x.timezone;
     const name=e.website?`<a class="name" href="${esc(e.website)}" target="_blank" rel="noopener">${esc(e.name)} ↗</a>`:`<span class="name">${esc(e.name)}</span>`;
     return `<article class="card ${past?"past":""}">
       <div>${name}
       <p class="description">${esc(e.description)}</p>
       <div class="meta"><span>${esc(e.conference_dates)}</span><span>·</span><span>${esc(e.location)}</span>${c.tags.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div></div>
-      <div class="deadline"><div class="date">${fmt(x.deadline)} (${esc(x.timezone)})</div><div class="countdown">${left} · Round ${x.round}${x.kind==="submission"?"":` · ${esc(x.kind)}`}</div></div>
+      <div class="deadline"><div class="date">${fmt(x.deadline)} (${esc(timezone)})</div><div class="countdown">${left} · Round ${x.round}${x.kind==="submission"?"":` · ${esc(x.kind)}`}</div></div>
     </article>`;
   }).join(""):`<div class="empty">No matching deadlines. Try another filter.</div>`;
 }
