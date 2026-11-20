@@ -10,8 +10,8 @@ const data = {conferences: [{
       {round: 1, kind: "submission", deadline: "2026-01-01T23:59:00", timezone: "UNSPECIFIED"}
     ]},
     {year: 2027, name: "EX 2027", description: "Second", location: "There", conference_dates: "TBA", website: "https://second.example", deadlines: [
-      {round: 1, kind: "abstract", deadline: "2027-01-01T23:59:00", timezone: "UNSPECIFIED"},
-      {round: 2, kind: "submission", deadline: "2027-01-08T23:59:00", timezone: "AoE"}
+      {round: 1, kind: "abstract", deadline: "2026-12-30T23:59:00", timezone: "UNSPECIFIED"},
+      {round: 1, kind: "full_paper", deadline: "2027-01-08T23:59:00", timezone: "AoE"}
     ]},
     {year: 2028, name: "EX 2028", description: "Third", location: "TBA", conference_dates: "TBA", website: null, deadlines: [
       {round: 1, kind: "submission", deadline: "2028-01-01T23:59:00", timezone: "UNSPECIFIED"}
@@ -30,14 +30,17 @@ const context = {
 vm.createContext(context);
 vm.runInContext(fs.readFileSync("app.js", "utf8"), context);
 setImmediate(() => {
-  assert.equal(elements.count.textContent, "4 deadlines");
+  assert.equal(elements.count.textContent, "3 conference editions · 4 deadlines");
+  assert.equal((elements.list.innerHTML.match(/<article /g)||[]).length, 3);
   assert.deepEqual(elements.year.options.map(x => x.value), [2026, 2027, 2028]);
   assert.match(elements.list.innerHTML, /https:\/\/first\.example/);
   assert.match(elements.list.innerHTML, /https:\/\/second\.example/);
   assert.match(elements.list.innerHTML, /<span class="name">EX 2028<\/span>/);
   assert.match(elements.list.innerHTML, /AoE/);
   assert.match(elements.list.innerHTML, /AoE assumed; source unspecified/);
-  assert.match(elements.list.innerHTML, /abstract/);
+  assert.match(elements.list.innerHTML, /Abstract · Round 1/);
+  assert.match(elements.list.innerHTML, /Full paper · Round 1/);
+  assert.match(elements.list.innerHTML, /Submission \(type unspecified\)/);
   assert.equal(vm.runInContext('deadlineInstant("2027-01-01T23:59:00", "UNSPECIFIED")', context), Date.parse("2027-01-02T11:59:00Z"));
   assert.equal(vm.runInContext('deadlineInstant("2027-01-01T23:59:00", "AoE")', context), Date.parse("2027-01-02T11:59:00Z"));
   assert.equal(vm.runInContext('deadlineInstant("2027-01-01T23:59:00", "UTC+02:30")', context), Date.parse("2027-01-01T21:29:00Z"));
@@ -47,17 +50,31 @@ setImmediate(() => {
   assert.match(vm.runInContext('deadlineState({deadline:"2027-01-01T23:59:00", timezone:"America/New_York"}, Date.parse("2027-01-02T11:59:01Z")).left', context), /date only/);
   elements.year.value = "2027";
   vm.runInContext("render()", context);
-  assert.equal(elements.count.textContent, "2 deadlines");
+  assert.equal(elements.count.textContent, "1 conference edition · 2 deadlines");
+  assert.equal((elements.list.innerHTML.match(/<article /g)||[]).length, 1);
   assert.doesNotMatch(elements.list.innerHTML, /EX 2026|EX 2028/);
   elements.year.value = "";
   elements.search.value = "there";
   vm.runInContext("render()", context);
-  assert.equal(elements.count.textContent, "2 deadlines");
+  assert.equal(elements.count.textContent, "1 conference edition · 2 deadlines");
   elements.search.value = "";
+  elements.year.value = "2027";
   elements.status.value = "upcoming";
   vm.runInContext("render()", context);
-  assert.equal(elements.count.textContent, "3 deadlines");
+  assert.equal(elements.count.textContent, "1 conference edition · 1 deadline");
+  assert.match(elements.list.innerHTML, /Full paper/);
+  assert.doesNotMatch(elements.list.innerHTML, /Abstract/);
   elements.status.value = "past";
   vm.runInContext("render()", context);
-  assert.equal(elements.count.textContent, "1 deadline");
+  assert.equal(elements.count.textContent, "1 conference edition · 1 deadline");
+  assert.match(elements.list.innerHTML, /Abstract/);
+  assert.doesNotMatch(elements.list.innerHTML, /Full paper/);
+  elements.search.value = "";
+  elements.year.value = "";
+  elements.status.value = "upcoming";
+  vm.runInContext("render()", context);
+  assert.equal(elements.count.textContent, "2 conference editions · 2 deadlines");
+  elements.status.value = "past";
+  vm.runInContext("render()", context);
+  assert.equal(elements.count.textContent, "2 conference editions · 2 deadlines");
 });
