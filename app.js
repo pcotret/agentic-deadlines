@@ -28,6 +28,10 @@ function initFilters(){
   tags.forEach(t=>$("#tag").add(new Option(t,t)));
   [...new Set(conferences.flatMap(c=>c.editions.map(e=>e.year)))].sort().forEach(y=>$("#year").add(new Option(y,y)));
 }
+function deadlineKind(kind){
+  const labels={abstract:"Abstract",abstract_registration:"Abstract registration",full_paper:"Full paper",submission:"Submission (type unspecified)"};
+  return labels[kind.toLowerCase()]||kind.replace(/[_-]+/g," ");
+}
 function render(){
   const q=$("#search").value.toLowerCase(), tag=$("#tag").value, year=$("#year").value, status=$("#status").value;
   const now=new Date().getTime();
@@ -38,16 +42,24 @@ function render(){
       &&(status==="all"||(status==="past"?past:!past));
   });
   $("#heading").textContent=status==="past"?"Past deadlines":status==="all"?"All deadlines":"Upcoming deadlines";
-  $("#count").textContent=`${rows.length} deadline${rows.length===1?"":"s"}`;
-  $("#list").innerHTML=rows.length?rows.map(x=>{
-    const c=x.conf, e=x.edition, {past,left}=deadlineState(x,now);
-    const timezone=x.timezone==="UNSPECIFIED"?"AoE assumed; source unspecified":x.timezone;
+  const editions=new Map();
+  rows.forEach(x=>{
+    if(!editions.has(x.edition)) editions.set(x.edition,{conf:x.conf,deadlines:[]});
+    editions.get(x.edition).deadlines.push(x);
+  });
+  $("#count").textContent=`${editions.size} conference edition${editions.size===1?"":"s"} · ${rows.length} deadline${rows.length===1?"":"s"}`;
+  $("#list").innerHTML=rows.length?[...editions].map(([e,group])=>{
+    const c=group.conf;
     const name=e.website?`<a class="name" href="${esc(e.website)}" target="_blank" rel="noopener">${esc(e.name)} ↗</a>`:`<span class="name">${esc(e.name)}</span>`;
-    return `<article class="card ${past?"past":""}">
+    return `<article class="card">
       <div>${name}
       <p class="description">${esc(e.description)}</p>
       <div class="meta"><span>${esc(e.conference_dates)}</span><span>·</span><span>${esc(e.location)}</span>${c.tags.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div></div>
-      <div class="deadline"><div class="date">${fmt(x.deadline)} (${esc(timezone)})</div><div class="countdown">${left} · Round ${x.round}${x.kind==="submission"?"":` · ${esc(x.kind)}`}</div></div>
+      <div class="deadlines">${group.deadlines.map(x=>{
+        const {past,left}=deadlineState(x,now);
+        const timezone=x.timezone==="UNSPECIFIED"?"AoE assumed; source unspecified":x.timezone;
+        return `<div class="deadline ${past?"past":""}"><div class="deadline-kind">${esc(deadlineKind(x.kind))} · Round ${x.round}</div><div class="date">${fmt(x.deadline)} (${esc(timezone)})</div><div class="countdown">${left}</div></div>`;
+      }).join("")}</div>
     </article>`;
   }).join(""):`<div class="empty">No matching deadlines. Try another filter.</div>`;
 }
